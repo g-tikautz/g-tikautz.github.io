@@ -1,252 +1,203 @@
-<!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<html class="not-ready text-sm lg:text-base" style="--bg: #faf6f1"
-  lang="en-us">
+<!doctype html>
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-  
-  <title>My New Hugo Site</title>
-
-  
-  <meta name="theme-color" />
-
-  
-  
-  
-  
-  <meta name="description" content="A personal blog" />
-  <meta name="author" content="My New Hugo Site" />
-  
-
-  
-
-
-  <script defer src="/main.js" defer></script>
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-  <link rel="preload stylesheet" as="style" href="http://example.org/main.min.css" />
-
-  
-
-  
-   
-  <link rel="preload" as="image" href="http://example.org/theme.png" />
-
-  
-  
-  
-  
-
-  
-
-  
-  <link rel="icon" href="http://example.org/favicon.ico" />
-  <link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png" />
-
-  
-  <meta name="generator" content="Hugo 0.111.1">
-
-  
-  
-  <link rel="alternate" type="application/rss&#43;xml" href="http://example.org/index.xml" title="My New Hugo Site" />
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  <meta property="og:title" content="My New Hugo Site" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://example.org/" />
-
-  
-  <meta itemprop="name" content="My New Hugo Site">
-<meta itemprop="description" content="">
-  
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="My New Hugo Site"/>
-<meta name="twitter:description" content=""/>
-
-  
-  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gregor Tikautz – AI Student &amp; Software Developer</title>
+  <meta name="description" content="Gregor Tikautz, Artificial Intelligence student at JKU Linz. Full-stack software development, machine learning, NLP and applied AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gregor Tikautz – AI Student &amp; Software Developer">
+  <meta property="og:description" content="Artificial Intelligence student at JKU Linz. Full-stack software development, machine learning, NLP and applied AI.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0d1419">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
 
-<body class="text-black duration-200 ease-out dark:text-white">
-  <header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
-  <div class="relative z-50 mr-auto flex items-center">
-    <a
-      class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold"
-      href="http://example.org/"
-      >My New Hugo Site</a
-    >
-    <div
-      class="btn-dark text-[0] ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
-      role="button"
-      aria-label="Dark"
-    ></div>
-  </div>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#top" aria-label="Gregor Tikautz, back to top">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M8 22 16 9l8 13" /><circle cx="8" cy="22" r="3"/><circle cx="16" cy="9" r="3"/><circle cx="24" cy="22" r="3"/></svg>
+        <span>Gregor Tikautz</span>
+      </a>
+      <nav id="site-nav" aria-label="Primary">
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#ai">AI &amp; ML</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <svg class="i-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="i-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        <span>Menu</span>
+      </button>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="true" aria-label="Switch to light theme">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+      </button>
+    </div>
+  </header>
 
-  <div
-    class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
-    role="button"
-    aria-label="Menu"
-  ></div>
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <svg class="net" viewBox="0 0 640 480" aria-hidden="true" focusable="false" preserveAspectRatio="xMaxYMid slice">
+        <g class="edges">
+          <path d="M80 380 220 290 360 330 470 200 580 120"/>
+          <path d="M220 290 250 150 400 90 470 200"/>
+          <path d="M360 330 500 400 580 300 470 200"/>
+          <path d="M250 150 120 120 60 220 220 290"/>
+          <path d="M400 90 580 120"/>
+          <path d="M500 400 400 450 360 330"/>
+        </g>
+        <g class="nodes">
+          <circle cx="80" cy="380" r="5"/><circle cx="220" cy="290" r="8"/><circle cx="360" cy="330" r="6"/>
+          <circle cx="470" cy="200" r="9" class="hot"/><circle cx="580" cy="120" r="5"/><circle cx="250" cy="150" r="6"/>
+          <circle cx="400" cy="90" r="5"/><circle cx="500" cy="400" r="5"/><circle cx="580" cy="300" r="6"/>
+          <circle cx="120" cy="120" r="4"/><circle cx="60" cy="220" r="5"/><circle cx="400" cy="450" r="4"/>
+        </g>
+      </svg>
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Linz, Austria</p>
+        <h1 id="hero-title">Gregor Tikautz</h1>
+        <p class="lede">Artificial Intelligence student at JKU Linz, combining hands-on full-stack software development with academic experience in machine learning, NLP and applied AI.</p>
+        <ul class="actions">
+          <li><a class="btn primary" href="#experience">Technical experience</a></li>
+          <li><a class="btn" href="#contact">Get in touch</a></li>
+        </ul>
+      </div>
+    </section>
 
-  
-  <script>
-    
-    const htmlClass = document.documentElement.classList;
-    setTimeout(() => {
-      htmlClass.remove('not-ready');
-    }, 10);
+    <section id="about" aria-labelledby="about-h">
+      <div class="wrap">
+        <h2 id="about-h"><span class="num" aria-hidden="true">01</span>About</h2>
+        <div class="grid two">
+          <div class="prose">
+            <p>I am studying Artificial Intelligence at Johannes Kepler University Linz, with coursework in machine learning, deep learning, NLP, reinforcement learning and recommender systems, mostly in Python and PyTorch.</p>
+            <p>Before that, I completed a Media Technology education at HTL Leonding, where I worked on web projects in teams. My interests span web development and machine learning.</p>
+            <p class="langs"><strong>Languages:</strong> German (native), English (fluent, spoken and written).</p>
+          </div>
+          <div class="skills">
+            <h3 class="small">Technologies</h3>
+            <dl>
+              <div><dt>Languages</dt><dd><ul class="tags"><li>Python</li><li>Java</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li><li>PHP</li></ul></dd></div>
+              <div><dt>Web</dt><dd><ul class="tags"><li>HTML5</li><li>CSS</li><li>React</li><li>Next.js</li><li>Angular</li></ul></dd></div>
+              <div><dt>Backend &amp; data</dt><dd><ul class="tags"><li>Spring Boot</li><li>Socket.IO</li><li>PostgreSQL</li></ul></dd></div>
+              <div><dt>AI &amp; ML</dt><dd><ul class="tags"><li>PyTorch</li><li>Machine Learning</li><li>Deep Learning</li><li>NLP</li><li>Reinforcement Learning</li><li>Recommender Systems</li></ul></dd></div>
+              <div><dt>Tools</dt><dd><ul class="tags"><li>Git</li><li>Docker</li></ul></dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    
-    const btnMenu = document.querySelector('.btn-menu');
-    btnMenu.addEventListener('click', () => {
-      htmlClass.toggle('open');
-    });
+    <section id="experience" aria-labelledby="exp-h">
+      <div class="wrap">
+        <h2 id="exp-h"><span class="num" aria-hidden="true">02</span>Technical experience</h2>
+        <ol class="timeline">
+          <li>
+            <div class="when"><time datetime="2026-10">Oct 2026</time> – present</div>
+            <div class="what">
+              <h3>Software Developer, JKU Racing</h3>
+              <p class="meta">Volunteer team member (unpaid) · Linz</p>
+              <p>Frontend and backend development for JKU Racing. I contribute to the team's public website (Next.js) and to internal web applications built with Angular, Spring Boot and PostgreSQL.</p>
+            </div>
+          </li>
+          <li>
+            <div class="when"><time datetime="2019-07">July 2019</time></div>
+            <div class="what">
+              <h3>Intern, Nerlich &amp; Lesser</h3>
+              <p class="meta">Internship</p>
+              <p>Maintenance, optimization and redesign of a webshop for sanitary products.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-    
-    const metaTheme = document.querySelector('meta[name="theme-color"]');
-    const lightBg = `"#faf6f1"`.replace(/"/g, '');
-    const setDark = (isDark) => {
-      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
-      htmlClass[isDark ? 'add' : 'remove']('dark');
-      localStorage.setItem('dark', isDark);
-    };
+    <section id="projects" aria-labelledby="proj-h">
+      <div class="wrap">
+        <h2 id="proj-h"><span class="num" aria-hidden="true">03</span>Selected projects</h2>
+        <article class="card project">
+          <div class="card-head">
+            <h3>Theorem</h3>
+            <p class="meta">Multiplayer card game · HTL Leonding, 2022–2023 · team of four</p>
+          </div>
+          <p>A collaborative school project: a multiplayer card game with a Next.js web client and a TypeScript game server using Socket.IO.</p>
+          <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Socket.IO</li></ul>
+          <ul class="links">
+            <li><a href="https://github.com/5AHITM/Theorem" rel="noopener">Web client<span class="sr"> (GitHub repository)</span> ↗</a></li>
+            <li><a href="https://github.com/g-tikautz/Theorem-socket-server" rel="noopener">Game server<span class="sr"> (GitHub repository)</span> ↗</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-    
-    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    if (htmlClass.contains('dark')) {
-      setDark(true);
-    } else {
-      const darkVal = localStorage.getItem('dark');
-      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
-    }
+    <section id="ai" aria-labelledby="ai-h">
+      <div class="wrap">
+        <h2 id="ai-h"><span class="num" aria-hidden="true">04</span>AI &amp; machine learning</h2>
+        <p class="section-intro">Areas I study in my degree programme.</p>
+        <ul class="interests">
+          <li><h3>Machine &amp; deep learning</h3><p>Fundamentals and neural network methods, with coursework in Python and PyTorch.</p></li>
+          <li><h3>NLP &amp; language models</h3><p>How language is represented, modelled and generated.</p></li>
+          <li><h3>Recommender systems</h3><p>Including conversational recommender systems: design, evaluation and debiasing.</p></li>
+          <li><h3>Reinforcement learning</h3><p>Learning from interaction and feedback.</p></li>
+        </ul>
+      </div>
+    </section>
 
-    
-    darkScheme.addEventListener('change', (event) => {
-      setDark(event.matches);
-    });
+    <section id="education" aria-labelledby="edu-h">
+      <div class="wrap">
+        <h2 id="edu-h"><span class="num" aria-hidden="true">05</span>Education</h2>
+        <ol class="timeline">
+          <li>
+            <div class="when">Oct 2024 – expected 2027</div>
+            <div class="what">
+              <h3>BSc Artificial Intelligence</h3>
+              <p class="meta">Johannes Kepler University Linz</p>
+              <p>Focus on machine learning, deep learning, NLP, reinforcement learning and recommender systems, using Python and PyTorch. Seminar in Artificial Intelligence: Conversational Recommender Systems (Design, Evaluation, Debiasing).</p>
+            </div>
+          </li>
+          <li>
+            <div class="when">Sep 2018 – 2023</div>
+            <div class="what">
+              <h3>Media Technology, Matura</h3>
+              <p class="meta">HTL Leonding (HTBLA Leonding)</p>
+              <p>Contributed to the development of the school website and, together with a classmate, to a project to digitize the student-representative elections.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-    
-    const btnDark = document.querySelector('.btn-dark');
-    btnDark.addEventListener('click', () => {
-      setDark(localStorage.getItem('dark') !== 'true');
-    });
-  </script>
-
-  <div
-    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
-  >
-    
-    
-
-    
-  </div>
-</header>
-
-
-  <main
-    class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-16 pb-24 dark:prose-invert">
-    
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  <h2 class="!my-0 pb-1 !leading-none">Start Page</h2>
-  <time class="text-sm opacity-50"
-    >Mar 10, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="http://example.org/homepage/start-page/">Start Page</a>
-</section>
-
-
-
-
-
-
+    <section id="contact" aria-labelledby="contact-h">
+      <div class="wrap">
+        <h2 id="contact-h"><span class="num" aria-hidden="true">06</span>Contact</h2>
+        <p class="section-intro">The best way to reach me is through LinkedIn. My public code is on GitHub.</p>
+        <p class="contact-cta"><a class="btn primary" href="https://www.linkedin.com/in/gregor-tikautz-406a78265/" rel="noopener me">Contact me on LinkedIn<span class="sr"> (opens LinkedIn)</span> ↗</a></p>
+        <ul class="contact">
+          <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/gregor-tikautz-406a78265/" rel="noopener me">gregor-tikautz</a></li>
+          <li><span class="label">GitHub</span><a href="https://github.com/g-tikautz" rel="noopener me">g-tikautz</a></li>
+          <li><span class="label">Location</span><span>Linz, Austria</span></li>
+          <li><span class="label">Languages</span><span>German (native), English (fluent)</span></li>
+        </ul>
+      </div>
+    </section>
   </main>
 
-  <footer
-  class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-50"
->
-  <div class="mr-auto">
-    &copy; 2023
-    <a class="link" href="http://example.org/">My New Hugo Site</a>
-  </div>
-  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
-    >Powered by Hugo️️</a
-  >️
-  <a
-    class="link"
-    href="https://github.com/nanxiaobei/hugo-paper"
-    rel="noopener"
-    target="_blank"
-    >Theme Paper</a
-  >
-</footer>
-
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year">2026</span> Gregor Tikautz</p>
+      <p><a href="#top">Back to top ↑</a></p>
+    </div>
+  </footer>
 </body>
-
 </html>
