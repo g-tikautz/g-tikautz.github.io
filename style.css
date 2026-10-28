@@ -148,3 +148,4 @@ h3.small { font: .8rem var(--mono); letter-spacing: .12em; text-transform: upper
   .bar { gap: .6rem; }
 }
 .contact-cta { margin: 0 0 2rem; }
+.meta + .meta { margin-top: -.35rem; }
