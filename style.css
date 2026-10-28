@@ -149,3 +149,7 @@ h3.small { font: .8rem var(--mono); letter-spacing: .12em; text-transform: upper
 }
 .contact-cta { margin: 0 0 2rem; }
 .meta + .meta { margin-top: -.35rem; }
+
+.project-list { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); }
+.project-list .card { max-width: none; }
+.card .note { margin: 0; font-size: .92rem; color: var(--muted); }
